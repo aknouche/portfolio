@@ -1,16 +1,19 @@
 body {
   text-align: center;
-  color: #555;
+  background-color: #DCDCDC;
+  font-family: monospace;
 }
 
-h6 {
-	margin-top: 100px;
+#increaseTopMargin {
+	margin-top: 50px;
 }
 
+#decreaseTopMargin {
+	margin-top: 1px;
+}
 
-a {
-  color: white;
-  font-size: 14px;
+p {
+	font-family: monospace;
 }
 
 footer {
@@ -65,7 +68,66 @@ footer {
   -ms-transform: translate(-50%, -50%);
 }
 
-.button1 {
+.buttonInfoShow {
+  position: relative;
+  float: bottom;	
+  background-color: black;
+  color: white;
+  border: 2px solid #555555;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+#panel, .flip {
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+}
+
+#moreInfoAbout, #moreInfoCV, #moreInfoSkills, #moreInfoMisc {
+  display: none;
+  position: center;
+  float: center;
+  border: 2px solid #555555;
+  padding: 12px 28px;
+  margin: auto;
+  text-align: center;
+ }
+
+  .buttonInfoHide {
+  display: none;	
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  border: 2px solid #555555;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 8px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+ }
+
+ .buttonContact {
+  position: relative;
+  float: bottom;
   background-color: white;
   color: black;
   border: 2px solid #555555;
@@ -78,10 +140,35 @@ footer {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 400px;
+  position: absolute;
+  right:    0;
+  bottom:   0;
 }
 
-.button1:hover {
+.buttonContact:hover {
   background-color: #555555;
   color: white;
+}
+
+ .buttonDate {
+  position: relative;
+  float: bottom;	
+  background-color: black;
+  color: white;
+  border: 2px solid #555555;
+  padding: 10px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top: 50px;
+ }
+
+.checked {
+  color: orange;
 }
