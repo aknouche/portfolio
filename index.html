@@ -5,10 +5,16 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+
   <body>
+  	<div id="citationContainer">
+  	  <h6>Dagens citat:</h6>	
+  	  <p id="citationParagraph"></p>	
+  	</div>
+	
     <h1>Här hittar du min portfolio</h1>
-    <p>Syftet med den här sidan är att presentera lite informtion om mig själv, däribland mitt CV, samtidigt som jag utvecklar mina kunskaper inom front-end utveckling.</p>
-    <button class="buttonDate" type="button" onclick="alertMe()">Klicka för att visa dagens datum</button>
+    <p id="introParagraph">Syftet med den här sidan är att presentera lite informtion om mig själv, däribland mitt CV, samtidigt som jag utvecklar mina kunskaper inom front-end utveckling.</p>
+    <button id="buttonDate" type="button" onclick="alertMe()">Klicka för att visa dagens datum</button>
     
     <div class="imagegallery">
   	  
@@ -104,13 +110,13 @@
   		    <div class="text">Övrigt<div><button class="buttonInfoShow" type="button" onclick="showMoreInfo('misc')">Visa övrig information</button></div> </div>
   		  </div>
   		    <div id="moreInfoMisc">
-            <p>Har även intresse för 1, 2, 3 </p>
+            <p>Jag bor i centrala Malmö med min fru och dotter. Trivs bra i stan där jag har bott hela mitt liv. På fritiden spenderar jag oftast tid med min familj. Har en ganska aktiv fritid där jag håller igång med gym och löpning och är har ett ganska stort fotbollsintresse. Gillar även resor, god mat och spännande serier eller filmer.</p>
             <button class="buttonInfoHide" type="button" onclick="hideMoreInfo('misc')">Dölj</button>
           </div>
   		</div>
       <!--<div>
         <div>
-          <button class="buttonContact" type="button">Kontakta mig</button>  
+          <button id="buttonContact" type="button">Kontakta mig</button>  
         </div>
         <div>
           <button class="buttonDate" type="button" onclick="showDate()">Visa dagens datum</button>
@@ -119,6 +125,6 @@
     </div>  
 
    
-    <script async src="./javascript/index.js"></script>
+    <script src="./javascript/index.js" defer></script>
   </body>
 </html>
