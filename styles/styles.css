@@ -4,12 +4,9 @@ body {
   font-family: monospace;
 }
 
-#increaseTopMargin {
-	margin-top: 50px;
-}
-
-#decreaseTopMargin {
-	margin-top: 1px;
+h6 {
+  margin-bottom: 5px;
+  font-size: 11px;
 }
 
 p {
@@ -18,8 +15,8 @@ p {
 
 footer {
 	clear: both;
-    position: relative;
-    height: 200px;
+  position: relative;
+  height: 200px;
 }
 
 .imagegallery {
@@ -125,7 +122,7 @@ footer {
   cursor: pointer;
  }
 
- .buttonContact {
+ #buttonContact {
   position: relative;
   float: bottom;
   background-color: white;
@@ -151,9 +148,9 @@ footer {
   color: white;
 }
 
- .buttonDate {
+ #buttonDate {
   position: relative;
-  float: bottom;	
+  float: right;	
   background-color: black;
   color: white;
   border: 2px solid #555555;
@@ -171,4 +168,22 @@ footer {
 
 .checked {
   color: orange;
+}
+
+#citationContainer {
+  position: absolute;
+  float: left;
+  width: 10%;
+  height: 500px;
+}
+
+#citationParagraph {
+  position: relative;
+  float: left;
+  font-size: 10px;
+}
+
+
+#introParagraph {
+  margin-top: 50px;
 }
